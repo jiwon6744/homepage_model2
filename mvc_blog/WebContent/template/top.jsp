@@ -62,30 +62,30 @@
 			<a href="${pageContext.request.contextPath }/index.jsp" class="smoothScroll">Home</a>
 			<c:choose>
 				<c:when test="${empty sessionScope.id }">
-			<a href="${pageContext.request.contextPath }/member/agree.do#agree" class="smoothScroll">회원가입</a>
-			<a href="${pageContext.request.contextPath }/member/login.do#login" class="smoothScroll">로그인</a>
+			<a href="${pageContext.request.contextPath }/member/agree.do#agree" class="smoothScroll">Join </a>
+			<a href="${pageContext.request.contextPath }/member/login.do#login" class="smoothScroll">Login</a>
 				</c:when>
 				<c:when test="${not empty sessionScope.id && sessionScope.grade=='H'}">
-			<a href="${pageContext.request.contextPath }/member/read.do" class="smoothScroll">나의정보</a>
-			<a href="${pageContext.request.contextPath }/member/update.do" class="smoothScroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회원수정</a>
-			<a href="${pageContext.request.contextPath }/member/delete.do" class="smoothScroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회원탈퇴</a>
-			<a href="${pageContext.request.contextPath }/member/logout.do" class="smoothScroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;로그아웃</a>
+			<a href="${pageContext.request.contextPath }/member/read.do" class="smoothScroll">MyInfo</a>
+<%-- 			<a href="${pageContext.request.contextPath }/member/update.do" class="smoothScroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit</a> --%>
+			<a href="${pageContext.request.contextPath }/member/delete.do" class="smoothScroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Withdrawal</a>
+			<a href="${pageContext.request.contextPath }/member/logout.do" class="smoothScroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logout</a>
 				</c:when>
 			</c:choose>
 			<c:if test="${not empty sessionScope.id && sessionScope.grade=='A'}">
-			<a href="${pageContext.request.contextPath }/member/logout.do">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;로그아웃</a>
-			<a href="${pageContext.request.contextPath }/admin/list.do" id="admin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회원목록</a>
+			<a href="${pageContext.request.contextPath }/member/logout.do">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logout</a>
+			<a href="${pageContext.request.contextPath }/admin/list.do" id="admin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Member list</a>
 			</c:if>
 			
-			<a href="${pageContext.request.contextPath }/memo/list.do#list" class="smoothScroll">메모</a>
+			<a href="${pageContext.request.contextPath }/memo/list.do#list" class="smoothScroll">Memo</a>
 <%-- 			<a href="${pageContext.request.contextPath }/memo/create.do#create" class="smoothScroll">메모등록</a> --%>
-			<a href="${pageContext.request.contextPath }/address/list.do#list" class="smoothScroll">주소록</a>
+			<a href="${pageContext.request.contextPath }/address/list.do#list" class="smoothScroll">Address</a>
 <%-- 			<a href="${pageContext.request.contextPath }/address/create.do#create" class="smoothScroll">주소생성</a> --%>
-			<a href="${pageContext.request.contextPath }/bbs/list.do#list" class="smoothScroll">게시판</a>
+			<a href="${pageContext.request.contextPath }/bbs/list.do#list" class="smoothScroll">Board</a>
 <%-- 			<a href="${pageContext.request.contextPath }/bbs/create.do#create" class="smoothScroll">게시판등록</a> --%>
-			<a href="${pageContext.request.contextPath }/team/list.do#list" class="smoothScroll">팀</a>
+			<a href="${pageContext.request.contextPath }/team/list.do#list" class="smoothScroll">Team</a>
 <%-- 			<a href="${pageContext.request.contextPath }/team/create.do#create" class="smoothScroll">팀생성</a> --%>
-			<a href="${pageContext.request.contextPath }/imgbbs/list.do#list" class="smoothScroll">이미지</a>
+			<a href="${pageContext.request.contextPath }/imgbbs/list.do#list" class="smoothScroll">Image</a>
 <%-- 			<a href="${pageContext.request.contextPath }/imgbbs/create.do#create" class="smoothScroll">이미지등록</a> --%>
 			<a href="#"><i class="icon-facebook"></i></a>
 			<a href="#"><i class="icon-twitter"></i></a>
