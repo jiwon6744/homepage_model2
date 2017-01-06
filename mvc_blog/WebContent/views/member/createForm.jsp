@@ -115,7 +115,7 @@
 </script>
 </head>
 <body>
-<div id="w">
+<div id="w" class="">
 	<div class="title"><h3>회원가입</h3></div>
 
 	<form name='frm' 
@@ -125,72 +125,72 @@
 		  onsubmit="return inputCheck(this)">
 		<table>
 			<tr>
-				<th>사진</th>
-				<td><input type="file" name="fname" accept=".jpg,.png,.gif"></td>
-				<td>사진은 jpg, png, gif파일만 올려주세요.</td>
+				<th class="table-bordered th">사진</th>
+				<td class="table-bordered td"><input type="file" name="fname" accept=".jpg,.png,.gif"></td>
+				<td class="table-bordered td">사진은 jpg, png, gif파일만 올려주세요.</td>
 			</tr>
 			<tr>
-				<th>*아이디</th>
-				<td><input type="text" name="id" size="15">
+				<th class="table-bordered th">*아이디</th>
+				<td class="table-bordered td"><input type="text" name="id" size="15">
 				<input type="button" class="button_mini" value="ID중복확인" onclick="idCheck(document.frm.id.value)">
 				</td>
-				<td>아이디를 적어주세요.</td>
+				<td class="table-bordered td">아이디를 적어주세요.</td>
 			</tr>
 			<tr>
-				<th>*패스워드</th>
-				<td>
+				<th class="table-bordered th">*패스워드</th>
+				<td class="table-bordered td">
 					<input type="password" name="passwd" size="15">
 				</td>
-				<td>패스워드를 적어주세요.</td>
+				<td class="table-bordered td">패스워드를 적어주세요.</td>
 			</tr>
 			<tr>
-				<th>*패스워드 확인</th>
-				<td>
+				<th class="table-bordered th">*패스워드 확인</th>
+				<td class="table-bordered td">
 					<input type="password" name="repasswd" size="15">
 				</td>
-				<td>패스워드를 확인합니다.</td>
+				<td class="table-bordered td">패스워드를 확인합니다.</td>
 			</tr>
 			<tr>
-				<th>*이름</th>
-				<td>
+				<th class="table-bordered th">*이름</th>
+				<td class="table-bordered td">
 					<input type="text" name="mname" size="15">
 				</td>
-				<td>고객 실명을 적어주세요.</td>
+				<td class="table-bordered td">고객 실명을 적어주세요.</td>
 			</tr>
 			<tr>
-				<th>전화번호</th>
-				<td>
+				<th class="table-bordered th">전화번호</th>
+				<td class="table-bordered td">
 					<input type="text" name="tel" size="15">
 				</td>
-				<td></td>
+				<td class="table-bordered td"></td>
 			</tr>
 			<tr>
-				<th>*이메일</th>
-				<td>
+				<th class="table-bordered th">*이메일</th>
+				<td class="table-bordered td">
 					<input type="text" name="email" size="20">
 					<input type="button" class="button_mini" value="Email중복확인" onclick="emailCheck(document.frm.email.value)">
 				</td>
-				<td>이메일을 적어주세요.</td>
+				<td class="table-bordered td">이메일을 적어주세요.</td>
 			</tr>
 			<tr>
-				<th>우편번호</th>
-				<td>
+				<th class="table-bordered th">우편번호</th>
+				<td class="table-bordered td">
 					<input type="text" name="zipcode" size="7" id="sample6_postcode" placeholder="우편번호"> 
 					<input type="button" class="button_mini" value="우편번호찾기" onclick="sample6_execDaumPostcode()">
 				</td>
-				<td></td>
+				<td class="table-bordered td"></td>
 			</tr>
 			<tr>
-				<th>주소</th>
-				<td>
+				<th class="table-bordered th">주소</th>
+				<td class="table-bordered td">
 					<input type="text" name="address1" size="40" id="sample6_address" placeholder="주소"> 
 					<input type="text" name="address2" size="40" id="sample6_address2" placeholder="상세주소">
 				</td>
-				<td></td>
+				<td class="table-bordered td"></td>
 			</tr>
 			<tr>
-				<th>*직업</th>
-				<td>
+				<th class="table-bordered th">*직업</th>
+				<td class="table-bordered td">
 					<select name="job">
 						<option value="0">선택하세요</option>
 						<option value="A01">회사원</option>
@@ -205,7 +205,7 @@
 						<option value="A10">기타</option>
 					</select>
 				</td>
-				<td>직업을 선택하세요.</td>
+				<td class="table-bordered td">직업을 선택하세요.</td>
 			</tr>
 		</table>
 		<div class='bottom'>
