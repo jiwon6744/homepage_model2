@@ -44,7 +44,7 @@ function read(id) {
 		</form>
 	</div>
 	<c:forEach items="${list }" var="dto">
-	<table>
+	<table class="table">
 		<tr>
 			<td rowspan="5" width="30%">
 			<img src='${pageContext.request.contextPath }/views/member/storage/${dto.fname}' style="width:250px">
